@@ -44,10 +44,11 @@
   justify-items: end;
   align-items: center;
   width: 100%;
-  min-height: 668px;
+  height: 100vh;
+  block-size: 668px;
   padding: var(--padding);
   margin-bottom: 40px;
-  box-sizing: 100vh;
+  
 
   @media (width >= 768px) {
     min-block-size: 1024px;
@@ -260,6 +261,12 @@
   text-decoration: none;
 }
 .text-link:focus {
+  outline: none;
+  border: 1px solid var(--main-text-color);
+}
+
+.text-link:focus-visible {
+  outline: transparent;
   border: 1px solid var(--main-text-color);
 }
 .text-link:hover {
@@ -368,8 +375,10 @@
   display: grid;
   place-items: center;
   position: relative;
-  min-height: 668px;
   margin-top: 40px;
+  height: 100vh;
+  block-size: 668px;
+ 
 
   @media (width >= 768px) {
     min-height: 1024px;
@@ -377,5 +386,10 @@
   }
   @media (width >= 1024px) {
     min-height: 768px;
+  }
+}
+.footer-title .title{
+  @media (width >= 1024px) {
+    text-shadow: 4px 4px 0 var(--footer-accent-color);
   }
 }
