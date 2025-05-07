@@ -44,19 +44,16 @@
   justify-items: end;
   align-items: center;
   width: 100%;
-  max-block-size: 100vh;
-  min-block-size: 668px;
+  height: max(100vh, 668px);
   padding: var(--padding);
   margin-bottom: 40px;
   
 
   @media (width >= 768px) {
-    min-block-size: 1024px;
     padding-left: 0;
     margin-bottom: 60px;
   }
   @media (width >= 1024px) {
-    min-block-size: 768px;
     justify-self: center;
     align-self: start;
   }
@@ -376,18 +373,13 @@
   place-items: center;
   position: relative;
   margin-top: 40px;
-  max-block-size: 100vh;
-  min-block-size: 668px;
+  height: max(100vh, 668px);
  
-
   @media (width >= 768px) {
-    min-height: 1024px;
     margin-top: 60px;
   }
-  @media (width >= 1024px) {
-    min-height: 768px;
-  }
-}
+ }
+
 .footer-title .title{
   @media (width >= 1024px) {
     text-shadow: 4px 4px 0 var(--footer-accent-color);
